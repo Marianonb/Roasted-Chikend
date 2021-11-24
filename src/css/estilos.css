@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+/*////////////////////////ETIQUETAS////////////////////////////*/
+img {
+    width: 100%;
+}
+ 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    
+}
+
+h3 {
+    font-size: 1em !important;
+}
+/* ///////////////////////////////////////////BARRA NAV////////////////////////////////////////*/
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.logo h4{
+    width: 50%;
+    font-size: 4em;
+    font-weight: bold;
+}
+.logo img{
+    width:40%;
+}
+.lista{ 
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+}
+.lista li a{
+    margin: 1px;
+    padding: .7em;
+    color:black;
+    transition: all 0.5s ease ;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.lista li a:hover{
+  
+    padding: 10px 30px;
+    color: white;
+    background:black;
+    border-radius: 10px;
+
+}
+
+/* ///////////////////////////////////////////IMG INICIO/////////////////////////////////*/
+.imgInicio{
+    width: 100%;
+    
+}
+.imgInicio img{
+    border-radius: 3px;
+}
+
+/*///////////////////////////////////////ARTICULO INICIO/////////////////////////////////////////////*/
+.articulo-inicio{ border-radius: 3px;
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+
+  
+}
+.texto-inicio{
+    padding: 10px;
+    width: 50%;
+    display: flex;
+}
+.texto-inicio img{
+    width: 50%;
+}
+
+.articulo{
+    width: 50%;
+    padding: 20px;
+    font-size: 20px ;
+}
+.articulo h3{
+    font-weight: bold;
+}
+.articulo p{
+    text-align: start;
+}
+
+
+/*///////////////////////////////////TITULO MENUES///////////////////////////////////////*/
+.menues h4{
+    text-align: center;
+    font-size: 70px;
+    margin: 20px;
+}
+/*//////////////////////////////CARROUSEL BOOSTRAP/////////////////////////////*/
+.carousel{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+}
+/*////////////////////////TEXTO SECUNDARIO////////////////////*/
+.textoSecundario{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*////////////////////////////////TARJETAS MENUES/////////////////////////////*/
+.Menues{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px;
+}
+
+.card img{
+    height: 150px;
+
+}
+/*/////////////////////////////////////NOSOTROS////////////////////////////*/
+.nosotros{ 
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nosotros h2{
+    margin: 20px;
+    font-size: 50px;
+
+}
+/*//////////////////////////////////////////CONTACTOS////////////////////////////////////////////////// */
+.contactos{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contactos h3{
+    width: 100%;
+    font-size: 1em;
+}
+.tarjetaContacto{
+    width: 30%;
+    margin: 0 10px;
+    text-align: center;
+}
+/*/////////////////////////////////FOOTER//////////////////////////////////////*/
+.footer{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/*//////////////////////////// MEDIA QUERIES////////////////////////////////////// */
+
+
+/* para telefonos */
+@media screen and (max-width:450px){
+    #nosotros {
+    max-height: 250px;
+    overflow-y: scroll;
+    }
+    .articulo {
+        max-height: 250px;
+        overflow-y: scroll;
+        }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .lista {
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo h4{
+        width: 100%;
+        font-size: 2em;
+       font-weight: bold;
+       text-align: center;
+    }
+}
